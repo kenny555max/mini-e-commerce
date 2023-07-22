@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .all_products,
+        .all_carts{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+        .product_image,
+        .cart_image{
+            height: 250px;
+            width: 100%;
+        }
+        .product,
+        .cart{
+            padding: 20px;
+            box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+        }
+        .product_action,
+        .cart_action{
+            padding: 10px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            line-height: 1.5;
+        }
+        button{
+            background-color: orange;
+            color: floralwhite;
+            padding: 10px 15px;
+            font-weight: bolder;
+            border: 0;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .container{
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1{
+            margin: 20px 0;
+        }
+        @media screen and (max-width: 768px) {
+            .all_products,
+            .all_carts{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class='wrapper'>
+        <div class="container">
+            <h1>Mini E-commerce Project</h1>
+
+            <div class="products">
+                <div class="title">
+                    <h1>Products</h1>
+                </div>
+                <div class="all_products">
+
+                </div>
+            </div>
+            <div class="carts">
+                <div class="title">
+                    <h1>Carts</h1>
+                </div>
+                <div class="all_carts">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
